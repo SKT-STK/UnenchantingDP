@@ -14,9 +14,7 @@
       "minecraft:grindstone"
     ],
     "^": [
-      "minecraft:anvil",
-      "minecraft:chipped_anvil",
-      "minecraft:damaged_anvil"
+      "minecraft:obsidian"
     ],
     "%": [
       "minecraft:enchanting_table"

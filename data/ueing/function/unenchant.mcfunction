@@ -5,6 +5,8 @@ execute store result score @s ueing.amethyst_count run data get entity @s Items[
 
 execute if score @s ueing.enchantment_count > @s ueing.amethyst_count run return -1
 
+execute if entity @p[level=..1] run return -1
+
 tag @s remove ueing.before
 
 data modify entity @s Items[{Slot:4b}].id set value "minecraft:enchanted_book"
@@ -22,3 +24,7 @@ data modify entity @s Items append value {id:"minecraft:barrier",Slot:1b,compone
 data modify entity @s[nbt=!{Items:[{id:"minecraft:amethyst_shard",Slot:2b}]}] Items append value {id:"minecraft:barrier",Slot:2b,components:{custom_data:{"ueing.barrier":true}}}
 
 tag @s add ueing.after
+
+xp add @p -1 levels
+playsound block.enchantment_table.use block @a ~ ~ ~ 1
+particle trial_spawner_detection ~ ~.7 ~ .5 0 .5 .001 100 normal

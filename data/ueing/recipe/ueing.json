@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "@#@",
+    "$%$",
+    "@^@"
+  ],
+  "key": {
+    "@": [
+      "minecraft:copper_ingot"
+    ],
+    "#": [
+      "minecraft:grindstone"
+    ],
+    "^": [
+      "minecraft:anvil",
+      "minecraft:chipped_anvil",
+      "minecraft:damaged_anvil"
+    ],
+    "%": [
+      "minecraft:enchanting_table"
+    ],
+    "$": [
+      "minecraft:diamond"
+    ]
+  },
+  "result": {
+    "id": "minecraft:strider_spawn_egg",
+    "components": {
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "ueing.marker",
+          "ueing.no_minecarts"
+        ]
+      },
+      "minecraft:item_name": "\"Unenchanting Table\"",
+      "minecraft:item_model": "ueing:unenchanting_table"
+    }
+  }
+}

@@ -8,6 +8,7 @@ execute as @e[tag=ueing.marker] at @s run tp @n[tag=ueing.minecart_z-1,distance=
 
 execute as @e[tag=ueing.marker] at @s store result score @s ueing.minecart_count if entity @e[tag=ueing.minecart,distance=...9]
 execute as @e[tag=ueing.marker,scores={ueing.minecart_count=..3}] at @s run function ueing:kill
+execute as @e[tag=ueing.marker] at @s unless block ~ ~ ~ enchanting_table run function ueing:kill
 
 execute as @e[tag=ueing.minecart,tag=ueing.before] unless data entity @s Items[{Slot:3b}] run data modify entity @s Items append value {id:"minecraft:barrier",Slot:3b,components:{custom_data:{"ueing.barrier":true}}}
 execute as @e[tag=ueing.minecart,tag=ueing.before] unless data entity @s Items[{Slot:4b}] run data modify entity @s Items append value {id:"minecraft:barrier",Slot:4b,components:{custom_data:{"ueing.barrier":true}}}

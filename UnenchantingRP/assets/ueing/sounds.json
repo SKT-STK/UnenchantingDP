@@ -1,0 +1,7 @@
+{
+  "block.unenchanting_table.use": {
+    "sounds": [
+      "ueing:block/unenchanting_table/use/1"
+    ]
+  }
+}

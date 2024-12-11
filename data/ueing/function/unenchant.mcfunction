@@ -14,10 +14,11 @@ data modify entity @s Items[{Slot:4b}].components."minecraft:stored_enchantments
 data modify entity @s Items[{Slot:3b}].id set from entity @s Items[{Slot:0b}].id
 data modify entity @s Items[{Slot:3b}].count set from entity @s Items[{Slot:0b}].count
 data modify entity @s Items[{Slot:3b}].components set from entity @s Items[{Slot:0b}].components
-data remove entity @s Items[{Slot:3b}].components."minecraft:enchantments"
+data remove entity @s Items[{Slot:3b}].components."minecraft:enchantments".levels
 
 scoreboard players operation @s ueing.amethyst_count -= @s ueing.enchantment_count
 execute store result entity @s Items[{Slot:2b}].count byte 1 run scoreboard players get @s ueing.amethyst_count
+data remove entity @s[scores={ueing.amethyst_count=0}] Items[{Slot:2b}]
 
 data modify entity @s Items append value {id:"minecraft:barrier",Slot:0b,components:{custom_data:{"ueing.barrier":true}}}
 data modify entity @s Items append value {id:"minecraft:barrier",Slot:1b,components:{custom_data:{"ueing.barrier":true}}}
@@ -26,5 +27,5 @@ data modify entity @s[nbt=!{Items:[{id:"minecraft:amethyst_shard",Slot:2b}]}] It
 tag @s add ueing.after
 
 xp add @p -1 levels
-playsound block.enchantment_table.use block @a ~ ~ ~ 1
+playsound ueing:block.unenchanting_table.use block @a ~ ~ ~ 1
 particle trial_spawner_detection ~ ~.7 ~ .5 0 .5 .001 100 normal

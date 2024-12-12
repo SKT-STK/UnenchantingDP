@@ -5,4 +5,4 @@ tag @s add ueing.before
 
 data remove entity @s Items[{Slot:0b}]
 data remove entity @s Items[{Slot:1b}]
-data remove entity @s Items[{Slot:2b}]
+data remove entity @s Items[{id:"minecraft:barrier",Slot:2b}]

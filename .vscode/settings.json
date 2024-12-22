@@ -9,6 +9,7 @@
     "minecarts",
     "nodamage",
     "playsound",
+    "RESOURCEPACK",
     "setblock",
     "stopsound",
     "tellraw",

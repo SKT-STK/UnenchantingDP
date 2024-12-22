@@ -20,9 +20,9 @@ scoreboard players operation @s ueing.amethyst_count -= @s ueing.enchantment_cou
 execute store result entity @s Items[{Slot:2b}].count byte 1 run scoreboard players get @s ueing.amethyst_count
 data remove entity @s[scores={ueing.amethyst_count=0}] Items[{Slot:2b}]
 
-data modify entity @s Items append value {id:"minecraft:barrier",Slot:0b,components:{custom_data:{"ueing.barrier":true}}}
-data modify entity @s Items append value {id:"minecraft:barrier",Slot:1b,components:{custom_data:{"ueing.barrier":true}}}
-data modify entity @s[nbt=!{Items:[{id:"minecraft:amethyst_shard",Slot:2b}]}] Items append value {id:"minecraft:barrier",Slot:2b,components:{custom_data:{"ueing.barrier":true}}}
+data modify entity @s Items append value {id:"minecraft:barrier",Slot:0b,components:{custom_data:{"ueing.barrier":true},item_name:'""'}}
+data modify entity @s Items append value {id:"minecraft:barrier",Slot:1b,components:{custom_data:{"ueing.barrier":true},item_name:'""'}}
+data modify entity @s[nbt=!{Items:[{id:"minecraft:amethyst_shard",Slot:2b}]}] Items append value {id:"minecraft:barrier",Slot:2b,components:{custom_data:{"ueing.barrier":true},item_name:'""'}}
 
 tag @s add ueing.after
 

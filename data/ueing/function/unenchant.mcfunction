@@ -11,6 +11,9 @@ tag @s remove ueing.before
 
 data modify entity @s Items[{Slot:4b}].id set value "minecraft:enchanted_book"
 data modify entity @s Items[{Slot:4b}].components."minecraft:stored_enchantments" set from entity @s Items[{Slot:0b}].components."minecraft:enchantments"
+data remove entity @s Items[{Slot:4b}].components."minecraft:custom_data"."ueing.barrier"
+data remove entity @s Items[{Slot:4b}].components."minecraft:repair_cost"
+data remove entity @s Items[{Slot:4b}].components."minecraft:item_name"
 data modify entity @s Items[{Slot:3b}].id set from entity @s Items[{Slot:0b}].id
 data modify entity @s Items[{Slot:3b}].count set from entity @s Items[{Slot:0b}].count
 data modify entity @s Items[{Slot:3b}].components set from entity @s Items[{Slot:0b}].components

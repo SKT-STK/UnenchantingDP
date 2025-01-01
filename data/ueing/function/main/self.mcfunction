@@ -6,3 +6,6 @@ execute as @e[tag=ueing.minecart,tag=ueing.after] run function ueing:main/after
 
 clear @a barrier[custom_data={"ueing.barrier":true}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"ueing.barrier":true}}}}]
+
+scoreboard players enable @a unenchanting.repair_cost
+execute as @a[scores={unenchanting.repair_cost=1..}] run function ueing:check_repair_cost

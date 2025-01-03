@@ -1,5 +1,6 @@
 {
   "values": [
-    "ueing:main/self"
+    "ueing:main/self",
+    "ueing:invis_mcs/tick"
   ]
 }

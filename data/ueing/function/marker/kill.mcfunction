@@ -1,6 +1,7 @@
 setblock ~ ~ ~ air
 
 kill @e[tag=ueing.minecart,distance=...9]
+kill @e[tag=ueing.model,distance=...9]
 
 kill @n[type=item,nbt={Item:{id:"minecraft:hopper_minecart"},Age:0s}]
 summon item ~ ~ ~ {Motion:[0.05d,0.3d,-0.05d],Item:{id:"minecraft:strider_spawn_egg",components:{entity_data:{id:"minecraft:marker",Tags:["ueing.marker","ueing.no_minecarts"]},item_name:'"Unenchanting Table"',item_model:"ueing:unenchanting_table"}}}
